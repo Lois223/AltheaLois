@@ -10,10 +10,12 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
     background-color: #000000;
+    overflow-x: hidden;
 }
 
 section{
@@ -470,77 +472,6 @@ section{
     flex: 0 0 auto; 
 }
 
-/*contact style
-.contact {
-    margin-top: 50px;
-    text-align: center;
-    color: #ffffff;
-    justify-content: center; 
-    margin-bottom: 80px;
-}
-
-.contact-content {
-    max-width: 850px; 
-    margin: 0 auto;      
-    padding: 0 20px;   
-}
-
-.contact p {
-    margin-top: 50px;
-    font-size: 20px;
-    letter-spacing: 3px;   
-    line-height: 1.6;      
-    text-align: justify;
-}
-
-.custom-form {
-    background-color: #000;
-    padding: 20px 40px; 
-    width: 60%; 
-    margin: 0 auto; 
-    min-width: 400px;
-}
-
-.inline-inputs {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
-
-.input-box, .input-box2 {
-    width: calc(50% - 5px);
-    padding: 10px;
-    border: 1px solid #fff;
-    background-color: transparent;
-    margin-bottom: 5px;
-    color: #ffffff;
-}
-
-.input-box2{
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-textarea.input-box {
-    width: 100%;
-    resize: none;
-}
-
-.contact .btn-2 {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: 2px solid #ffffff;
-    cursor: pointer;
-    float: right;
-    margin-top: 10px;
-    width: 200px;
-}
-
-.contact .btn-2:hover {
-    background-color: #f1f1f180;
-}*/
-
 /*contact*/
 .contact {
     margin-top: 50px;
@@ -946,7 +877,7 @@ textarea.input-box {
 }
 
 
-@media (max-width: 375px) {   
+@media (max-width: 475px) {   
       html::-webkit-scrollbar, body::-webkit-scrollbar {
         display: none;
       }

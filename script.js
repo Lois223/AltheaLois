@@ -1,5 +1,4 @@
-
-if (window.innerWidth > 375) {
+if (window.innerWidth > 475) {
     gsap.registerPlugin(ScrollTrigger);
 
     const slides = gsap.utils.toArray(".slide");
@@ -7,19 +6,18 @@ if (window.innerWidth > 375) {
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: ".slides",
-            start: "-20px top",
-            end: () => `+=${(slides.length - 1) * window.innerWidth}`,
+            start: "top top",
+            end: () => `+=${slides.length * window.innerWidth}`,
             scrub: true,
-            pin: true,               
-        }
+            pin: true,
+        },
     });
 
-    tl.to(".slides", { xPercent: -100 * (slides.length - 1), ease: "power1.inOut" });
+    tl.to(".slides", { xPercent: -100 * (slides.length - 1), ease: "none" });
 } else {
-    document.querySelector('.slides').style.display = 'block'; // Ensure slides stack vertically
+    document.querySelector(".slides").style.display = "block";
 
-    // Disable GSAP ScrollTrigger 
     if (ScrollTrigger.getAll()) {
-        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     }
 }
