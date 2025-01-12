@@ -930,7 +930,8 @@ section{
     .about h1{
         font-size: 25px;
         letter-spacing: 10px;
-        margin-right: 90px;
+        margin-right: 0;
+        text-align: center;
     }
 
     .about p {
@@ -961,7 +962,12 @@ section{
     .project .title h1{
         font-size: 25px;
         letter-spacing: 10px;
-        margin-right: 130px;  
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .project .line2{
+        display: none;
     }
 
     /* style for projItem */
@@ -972,8 +978,8 @@ section{
     }
 
     .project .image {
-        width: 280px;
-        height: 180px;
+        width: 90%;
+        height: 200px;
         margin: 0;
     }
 
@@ -981,7 +987,7 @@ section{
         position: relative;
         margin-top: 5px;
         margin-left: 0;
-        width: 280px; 
+        width: 90%; 
         height: auto;
         padding: 0; 
     }
@@ -1025,7 +1031,7 @@ section{
     /*contact*/ 
     .contact{
         margin-top: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 100px;
     }
 
     .contact .title{
@@ -1036,7 +1042,8 @@ section{
         color: #ffffff;
         font-size: 25px;
         letter-spacing: 10px;
-        margin-right: 40px;  
+        margin-right: 0;
+        text-align: center;
     }
 
     .contact p {
@@ -1142,6 +1149,10 @@ section{
 
     .project-img h3 {
         margin: 10px 0;
+    }
+
+    .project-img {
+        padding: 0 10px;
     }
  
     .project-img .img {
