@@ -919,6 +919,10 @@ section{
     }
 
     /*contact style*/
+    .contact{
+        margin-bottom: 80px;
+    }
+
     .contact .title{
         display: block;
     }
@@ -1139,7 +1143,6 @@ section{
     /*contact*/ 
     .contact{
         margin-top: 30px;
-        margin-bottom: 80px;
     }
 
     .contact .title{
