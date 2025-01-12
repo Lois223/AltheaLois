@@ -887,7 +887,7 @@ section{
       }
 
       section{
-        padding: 50px 0;
+        padding: 100px 0;
     }
   
       .sidebar {
@@ -905,7 +905,7 @@ section{
 
     /*info style*/
     .info .content{
-        margin-top: 100px;
+        margin-top: 130px;
     }
     
     .info .content h1{
