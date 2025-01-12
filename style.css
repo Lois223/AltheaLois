@@ -485,6 +485,15 @@ section{
     display: none;
 }
 
+.contact h1{
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-right: 0;
+    text-align: center;
+    display: hidden;
+}
+
 .contact-content {
     max-width: 850px; 
     margin: 0 auto;      
@@ -818,7 +827,7 @@ section{
     opacity: 1; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     body{
       margin-left: 70px;
     }
@@ -873,104 +882,21 @@ section{
     .techstack-container {
         margin-right: 0;
     }
-  
-}
-
-
-@media (max-width: 475px) {   
-      html::-webkit-scrollbar, body::-webkit-scrollbar {
-        display: none;
-      }
-
-      body{
-        margin-left: 40px;
-      }
-
-      section{
-        padding: 100px 0;
-    }
-  
-      .sidebar {
-          width: 30px;
-      }
-  
-      .sidebar.expanded {
-          width: 220px;
-      }
-
-      .toggle-btn {
-        padding: 5px; 
-        font-size: 12px; 
-    }
-
-    /*info style*/
-    .info .content{
-        margin-top: 130px;
-    }
-    
-    .info .content h1{
-        font-size: 65px;
-    }
-    
-    .info .content p{
-        color: #ffffff;
-        font-size: 20px;
-    }
-    
-    .info .btn-1{
-        padding: 7px 20px;
-        font-size: 15px;
-    }
-
-    .info .btn-1:hover{
-        padding: 7px 20px;
-    }
 
     /*about style*/
     .about h1{
-        font-size: 25px;
         letter-spacing: 10px;
         margin-right: 0;
         text-align: center;
     }
 
-    .about p {
-        font-size: 15px;
-        line-height: 30px;
-    }
-
-    .techstack-container {
-        margin-left: 15px;
+    /*project style*/
+    .project .title h1{
+        letter-spacing: 10px;
+        margin-right: 0;
+        text-align: center;
     }
     
-    .techstack {
-        justify-content: space-evenly;  
-    }
-
-    .techstack li {
-        display: block; 
-        width: 48%; 
-        margin-right: 0; 
-        margin-bottom: 10px; 
-    }
-
-    /*projet style*/
-    .project{
-        margin-top: -50px;
-    }
-
-    .project .title h1{
-        font-size: 25px;
-        letter-spacing: 10px;
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .project .line2{
-        display: none;
-    }
-
-    /* style for projItem */
     .project .projItem {
         flex-direction: column; 
         margin-left: 0;
@@ -979,7 +905,7 @@ section{
 
     .project .image {
         width: 90%;
-        height: 200px;
+        height: 350px;
         margin: 0;
     }
 
@@ -992,63 +918,14 @@ section{
         padding: 0; 
     }
 
-    .project .info {
-        color: white;
-        text-align: left; 
-        padding: 15px;
-        text-align: justify;
-        font-size: 15px;
-
-    }
-
-    .project .info h1 {
-        display: none;
-    }
-
-    .project .info ul {
-        margin-top: 10px;
-        padding: 0;
-        list-style-type: none;
-    }
-
-    .project .techstack li {
-        display: inline-block;
-        margin-right: 100px;
-        margin-bottom: 5px;
-        font-size: 14px;
-        padding: 8px; 
-    }
-
-    .project .techstack li:hover {
-        background-color: #000;
-     }
-
-     .project .info .btn-2 {
-        margin: 10px 0;
-        font-size: 12px;     
-    }
-
-    /*contact*/ 
-    .contact{
-        margin-top: 30px;
-        margin-bottom: 100px;
-    }
-
+    /*contact style*/
     .contact .title{
         display: block;
     }
 
     .contact h1{
-        color: #ffffff;
         font-size: 25px;
-        letter-spacing: 10px;
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .contact p {
-        margin-top: 20px;
-        font-size: 13px;
+        margin-bottom: 10px;
     }
 
     .contact-links, .con-links{
@@ -1060,17 +937,8 @@ section{
         flex-direction: column; 
         align-items: flex-start; 
     }
-    
-    .contact-links h2 {
-        margin-right: 5px;
-        font-size: 20px;
-    }
 
-    .contact-links .con-links .link-item a {
-        font-size: 15px;
-    }
-    
-    /*style for project item page*/
+     /*style for project item page*/
     .no-margin{
         margin-left: 0;
     }
@@ -1117,6 +985,186 @@ section{
         padding: 0 5px;
     }
 
+    .project-item h1 {
+        font-size: 45px;
+        text-align: center;
+        margin-top: -20px;
+    }
+    
+    .project-item hr {
+         width: 90%; 
+         margin-left: 35px;
+     }
+
+     .back-link {
+        font-size: 15px;
+        position: relative;
+    }
+
+    .back-link i {
+        margin-right: 8px;
+    }
+  
+}
+
+
+@media (max-width: 475px) {   
+      html::-webkit-scrollbar, body::-webkit-scrollbar {
+        display: none;
+      }
+
+      body{
+        margin-left: 40px;
+      }
+
+      section{
+        padding: 100px 0;
+    }
+  
+      .sidebar {
+          width: 30px;
+      }
+  
+      .sidebar.expanded {
+          width: 220px;
+      }
+
+      .toggle-btn {
+        padding: 5px; 
+        font-size: 12px; 
+    }
+
+    /*info style*/
+    .info .content{
+        margin-top: 150px;
+    }
+    
+    .info .content h1{
+        font-size: 65px;
+    }
+    
+    .info .content p{
+        color: #ffffff;
+        font-size: 20px;
+    }
+    
+    .info .btn-1{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+
+    .info .btn-1:hover{
+        padding: 7px 20px;
+    }
+
+    /*about style*/
+    .about h1{
+        font-size: 25px;
+    }
+
+    .about p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .techstack-container {
+        margin-left: 15px;
+    }
+    
+    .techstack {
+        justify-content: space-evenly;  
+    }
+
+    .techstack li {
+        display: block; 
+        width: 48%; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    /*projet style*/
+    .project{
+        margin-top: -50px;
+    }
+
+    .project .title h1{
+        font-size: 25px;
+    }
+
+    .project .line2{
+        display: none;
+    }
+
+    /* style for projItem */
+    .project .image {
+        height: 200px;
+    }
+
+    .project .info {
+        color: white;
+        text-align: left; 
+        padding: 15px;
+        text-align: justify;
+        font-size: 15px;
+
+    }
+
+    .project .info h1 {
+        display: none;
+    }
+
+    .project .info ul {
+        margin-top: 10px;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .project .techstack li {
+        display: inline-block;
+        margin-right: 100px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        padding: 8px; 
+    }
+
+    .project .techstack li:hover {
+        background-color: #000;
+     }
+
+     .project .info .btn-2 {
+        margin: 10px 0;
+        font-size: 12px;     
+    }
+
+    /*contact*/ 
+    .contact{
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .contact .title{
+        display: block;
+    }
+
+    .contact h1{
+        font-size: 25px;
+    }
+
+    .contact p {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    
+    .contact-links h2 {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+
+    .contact-links .con-links .link-item a {
+        font-size: 15px;
+    }
+    
+    /*style for project item page*/
     .project-item h1 {
         font-size: 35px;
         text-align: center;
@@ -1210,14 +1258,6 @@ section{
     /*style for back link*/
     .back-link {
         font-size: 13px;
-        position: relative;
     }
-
-    .back-link i {
-        margin-right: 8px;
-    }
-    
-    
-
     
 }

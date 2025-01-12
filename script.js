@@ -3,7 +3,7 @@ let isInitialized = false;
 function initializeGSAP() {
     const slides = document.querySelector(".slides");
 
-    if (window.innerWidth > 475) {
+    if (window.innerWidth > 1024) {
         // Desktop: Horizontal Scrolling
         if (!isInitialized) {
             gsap.registerPlugin(ScrollTrigger);
@@ -29,7 +29,7 @@ function initializeGSAP() {
             isInitialized = true;
         }
     } else {
-        // Mobile: Vertical Layout
+        // Mobile & Tablet: Vertical Layout
         slides.style.display = "block";
 
         // Kill all ScrollTrigger instances to prevent conflicts
