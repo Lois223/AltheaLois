@@ -10,19 +10,31 @@ function initializeGSAP() {
 
             const slideElements = gsap.utils.toArray(".slide");
 
+            // Calculate the total width dynamically
+            const totalWidth = slideElements.reduce((acc, slide) => {
+                return acc + slide.offsetWidth + parseInt(getComputedStyle(slides).gap || "0");
+            }, 0);
+
+            // Add 100vw extra space at the end (buffer)
+            const buffer = window.innerWidth;
+
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".slides",
                     start: "top top",
-                    end: () => `+=${slideElements.length * window.innerWidth}`,
+                    end: () => `+=${totalWidth + buffer}`, // End scroll with buffer added
                     scrub: true,
                     pin: true,
                 },
             });
 
-            tl.to(".slides", { xPercent: -100 * (slideElements.length - 1), ease: "none" });
+            // Smooth horizontal slide animation
+            tl.to(".slides", {
+                x: -(totalWidth + buffer), // Move slides to the left including the buffer
+                ease: "none",
+            });
 
-            // Ensure slides have horizontal layout
+            // Ensure slides have a horizontal layout
             slides.style.display = "flex";
             slides.style.flexDirection = "row";
 
@@ -39,7 +51,7 @@ function initializeGSAP() {
         }
 
         // Reset any leftover GSAP animations
-        gsap.set(".slides", { xPercent: 0 });
+        gsap.set(".slides", { x: 0 });
 
         isInitialized = false;
     }

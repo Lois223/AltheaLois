@@ -827,6 +827,22 @@ section{
     opacity: 1; 
 }
 
+@media (max-width: 1260px){
+     /*contact style*/    
+    .contact p {
+        padding: 10px;
+        margin-left: 100px;
+    }
+    
+    .contact-links h2 {
+        font-size: 25px;
+    }
+
+    .contact-links .con-links .link-item a {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 1024px) {
     body{
       margin-left: 70px;
@@ -930,6 +946,11 @@ section{
     .contact h1{
         font-size: 25px;
         margin-bottom: 10px;
+    }
+
+    .contact p {
+        padding: 0;
+        margin-left: 0;
     }
 
     .contact-links, .con-links{
