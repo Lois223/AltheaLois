@@ -1044,7 +1044,11 @@ section{
 
       section{
         padding: 100px 0;
-    }
+     }
+
+      button, a {
+      -webkit-tap-highlight-color: transparent;
+      }
   
       .sidebar {
           width: 30px;
